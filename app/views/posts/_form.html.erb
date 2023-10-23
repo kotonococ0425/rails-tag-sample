@@ -17,6 +17,11 @@
   </div>
 
   <div>
+    <%= label_tag :tag_name, "タグ（,区切りで入力してください）", style: "display: block" %>
+    <%= text_field_tag :tag_name, tag_name %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

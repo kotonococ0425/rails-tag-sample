@@ -4,4 +4,10 @@
     <%= post.content %>
   </p>
 
+  <p>
+    <strong>Tag:</strong>
+    <% post.tags.each do |tag| %>
+      <%= tag.name %>
+    <% end %>
+  </p>
 </div>
